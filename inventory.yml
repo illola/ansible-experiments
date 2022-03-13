@@ -1,0 +1,15 @@
+all:
+  children:
+    cen:
+      hosts:
+        cent1:
+          ansible_ssh_user: cerer
+        cent2:
+          ansible_ssh_user: proci
+    ubu:
+      hosts:
+        untu1:
+          ansible_ssh_user: oper
+        untu2:
+          ansible_ssh_user: aler
+
