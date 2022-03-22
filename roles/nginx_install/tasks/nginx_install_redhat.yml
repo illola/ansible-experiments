@@ -1,0 +1,12 @@
+---
+  - name: install epel on {{ ansible_os_family }}
+    ansible.builtin.yum:
+      name: "epel-release"
+      state: latest
+      update_cache: yes
+
+  - name: install nginx on {{ ansible_os_family }}
+    ansible.builtin.yum:
+      name: "nginx"
+      state: latest
+      update_cache: yes

@@ -1,0 +1,6 @@
+---
+  - name: install nginx in {{ ansible_os_family }}
+    ansible.builtin.apt:
+      name: "nginx"
+      state: latest
+      update_cache: yes

@@ -3,7 +3,9 @@
   hosts: all
   # strategy: free             # do tasks separate
   # gather_facts: false        # don't get facts
+  become: true
   # become: false              # don't become root
   roles:
-    # - nul_role
+    #- nul_role
+    - python3_install
     - nginx_install

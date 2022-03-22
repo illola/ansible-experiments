@@ -1,2 +1,3 @@
 ---
-# tasks file for python3_install
+  - name: import tasks for OS
+    include_tasks: python3_install_{{ ansible_os_family|lower }}.yml

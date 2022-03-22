@@ -1,0 +1,6 @@
+---
+  - name: install python3 on {{ ansible_os_family }}
+    ansible.builtin.yum:
+      name: "python3"
+      state: latest
+      update_cache: yes
